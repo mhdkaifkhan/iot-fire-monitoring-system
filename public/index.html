@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>🔥 Fire Monitoring Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>🔥 Fire Monitoring System</h1>
+
+<div class="container">
+
+<div class="card">
+<h2>Temperature</h2>
+<h3 id="temp">--</h3>
+</div>
+
+<div class="card">
+<h2>Smoke</h2>
+<h3 id="smoke">--</h3>
+</div>
+
+<div class="card" id="statusCard">
+<h2>Status</h2>
+<h3 id="status">--</h3>
+</div>
+
+</div>
+
+<h2>Temperature Graph</h2>
+
+<canvas id="tempChart"></canvas>
+
+<h2>Smoke Graph</h2>
+
+<canvas id="smokeChart"></canvas>
+
+<h2>Last 20 Records</h2>
+
+<table border="1" align="center" id="historyTable">
+
+<tr>
+<th>Time</th>
+<th>Temp</th>
+<th>Smoke</th>
+<th>Status</th>
+</tr>
+
+</table>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
